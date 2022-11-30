@@ -1,0 +1,45 @@
+#blogContainer {
+    max-width: 360px;
+    padding: 10px;
+    color: white;
+    margin: 5vh 0 15vh;
+}
+
+#blogContainer>img {
+    display: block;
+    width: 350px;
+    height: 250px;
+    border: 1px solid wheat;
+    margin: 0 auto;
+}
+
+#blogContainer>h2 {
+    margin: 10px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+#blogContainer>p {
+    margin: 10px;
+    max-height: 80px;
+    overflow: hidden;
+}
+
+#blogContainer>button {
+    padding: 5px 30px 5px 15px;
+    background-color: #00000f;
+    border: 2px solid white;
+    border-radius: 25px;
+    color: white;
+    position: relative;
+    cursor: pointer;
+    margin: 10px;
+}
+
+#blogContainer>button>img {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    height: 15px;
+}

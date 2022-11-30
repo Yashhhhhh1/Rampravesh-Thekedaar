@@ -1,0 +1,13 @@
+#galleryContainer {
+    height: 120px;
+    max-width: 33vw;
+    overflow: auto;
+    border: 1px solid white;
+    margin-left: 30px;
+}
+
+#galleryContainer>img {
+    height: 100px;
+    margin: 5px;
+    cursor: pointer;
+}
