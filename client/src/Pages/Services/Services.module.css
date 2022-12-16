@@ -1,115 +1,135 @@
 #servicesPageContainer {
-    background-color: #00000f;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 #container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    margin: 0;
-    height: 100vh;
+  width: 80vw;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 40px auto;
 }
 
-#container>div {
-    margin: 0 70px;
+#container > div {
+  width: calc(540px - 10px);
+  max-width: 100%;
 }
 
-#container>div>img {
-    height: 400px;
-    max-width: 40vw;
-    margin: 0;
+#container > div > img {
+  height: 400px;
+  max-width: 100%;
+  margin: 0;
 }
 
 #galleryContainer {
-    height: 180px;
+  height: 180px;
 }
 
-#galleryContainer>p {
-    color: white;
-    margin: 15px 30px;
-    font-style: italic;
-    font-size: 20px;
-    text-decoration: 2px underline;
-    text-underline-offset: 6px;
+#galleryContainer > p {
+  color: white;
+  margin: 15px 30px;
+  font-style: italic;
+  font-size: 20px;
+  text-decoration: 2px underline;
+  text-underline-offset: 6px;
 }
 
 #descriptionContainer {
-    color: white;
-    max-width: 32vw;
-    margin: 0;
+  color: white;
+  min-width: 32vw;
+  max-width: 100%;
+  margin: 0;
 }
 
-#descriptionContainer>h1 {
-    font-size: 10vh;
-    overflow-wrap: break-word;
-    color: #3963ab;
-    line-height: 66px;
+#descriptionContainer > h1 {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-size: 5.6vmax;
+  color: #3963ab;
+  line-height: 5vmax;
 }
 
-#descriptionContainer>h1>span {
-    margin-right: 10px;
-    font-weight: 500;
+#descriptionContainer > h1 > span {
+  display: inline-block;
+  margin: 0 8px;
+  font-weight: 500;
 }
 
 .bulletPoint {
-    max-width: 30vw;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    position: relative;
-    margin: 20px 0;
+  width: 380px;
+  max-width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  position: relative;
+  margin: 1rem 0;
 }
 
-.bulletPoint>span {
-    font-size: 17px;
-    padding-left: 30px;
+.bulletPoint > span {
+  font-size: 17px;
+  padding-left: 30px;
 }
 
-.bulletPoint>img {
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    height: 30px;
+.bulletPoint > img {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  height: 30px;
 }
 
 #details {
-    color: gray;
-    font-weight: 700;
+  color: gray;
+  font-weight: 700;
 }
 
-#details>p {
-    opacity: 0.6;
-    margin: 0;
+#details > p {
+  opacity: 0.6;
+  margin: 0;
 }
 
 #enquiryBtn {
-    background-color: #3963ab;
-    color: white;
-    border: none;
-    padding: 8px 18px;
-    padding-right: 40px;
-    margin-top: 15px;
-    box-shadow: 0 0 10px #3963ab;
-    position: relative;
-    cursor: pointer;
+  background-color: #3963ab;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  padding-right: 40px;
+  margin-top: 15px;
+  box-shadow: 0 0 10px #3963ab;
+  position: relative;
+  cursor: pointer;
 }
 
-#enquiryBtn>img {
-    position: absolute;
-    right: 10px;
-    top: 5px;
-    width: 20px;
+#enquiryBtn > img {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  width: 20px;
 }
-
 
 ::-webkit-scrollbar {
-    width: 5px;
-    color: white;
-    background-color: #00000f;
+  width: 5px;
+  color: white;
+  background-color: #00000f;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #3963ab;
-    width: 100%;
+  background-color: #3963ab;
+  width: 100%;
+}
+
+@media screen and (max-width: 425px) {
+  #container > div {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #container {
+    justify-content: center;
+  }
 }

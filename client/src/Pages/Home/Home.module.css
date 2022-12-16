@@ -1,133 +1,211 @@
-#homePageContainer {
-    margin: 0;
-    background-color: #00000F;
-    overflow: hidden;
-}
-
 #bg1Container {
-    height: 100vh;
-    width: 100vw;
-    background-image: url("../../assets/BG1.png");
-    background-repeat: no-repeat;
-    background-position: top right;
-    background-size: 70vw 95vh;
-    color: white;
+  background-image: url("../../assets/BG1.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+  color: white;
 }
 
-#bg1Container>div {
-    width: 40vw;
-    margin: 0 120px;
-    padding: 80px 0;
+#bg1Container > div {
+  margin: 0 14vmin;
+  padding: 8rem 0;
+  width: 40vw;
 }
 
-#bg1Container>div>h1 {
-    color: #3963ab;
-    font-weight: 600;
-    font-size: 18vh;
-    line-height: 110px;
-    margin: 20px 0;
+#bg1Container > div > h1 {
+  color: #3963ab;
+  font-weight: 600;
+  font-size: 7vmax;
+  margin: 20px 0;
+  line-height: 7vmax;
 }
 
-#bg1Container>div>p {
-    width: 25vw;
-    font-size: 20px;
-    margin: 30px 15px;
+#bg1Container > div > p {
+  width: 80%;
+  margin: 30px 0;
 }
 
 #aboutContainer {
-    height: 100vh;
-    width: 100vw;
-    background-image: url("../../assets/BG2.png");
-    background-repeat: no-repeat;
-    background-position: center left;
-    background-size: 70vw 95vh;
-    color: white;
+  height: 80vh;
+  background-image: url("../../assets/BG2.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: contain;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 120px;
 }
 
-#aboutContainer>div {
-    width: 33vw;
-    float: right;
-    margin-right: 220px;
-    padding-top: 50px;
+#aboutContainer > div {
+  width: 330px;
+  max-width: 100%;
+  align-self: flex-end;
+  margin-right: 16vmax;
+  padding-top: 50px;
 }
 
-#aboutContainer>div>h1 {
-    font-size: 15vh;
-    margin: 0;
-    color: #3963ab;
-    font-weight: 500;
+#aboutContainer > div > h1 {
+  font-size: 7vmax;
+  margin: 15px 0;
+  color: #3963ab;
+  font-weight: 500;
 }
 
-#aboutContainer>div>h1>span {
-    margin-left: 20px;
-    font-weight: bold;
-}
-
-#aboutContainer>div>p {
-    font-size: 18px;
+#aboutContainer > div > h1 > span {
+  margin-left: 20px;
+  font-weight: 600;
 }
 
 #testimonialContainer {
-    height: 100vh;
-    width: 100vw;
-    background-image: url("../../assets/BG3.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100vw;
-    color: white;
+  background-image: url("../../assets/BG3.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: white;
+  margin: 50px 0;
 }
 
-#testimonialContainer>div {
-    padding-top: 50px;
-    color: #3963ab;
-    text-align: center;
+#testimonialContainer > div {
+  color: #3963ab;
+  text-align: center;
+  padding: 50px 0 0;
 }
 
-#testimonialContainer>div>h3 {
-    font-size: 10vh;
-    margin: 20px 0 0;
-    font-weight: 500;
-    letter-spacing: 3px;
+#testimonialContainer > div > h3 {
+  font-size: 5vmax;
+  margin: 20px 0 0;
+  font-weight: 500;
+  letter-spacing: 3px;
 }
 
-#testimonialContainer>div>h3>span {
-    margin-left: 15px;
-    font-weight: 700;
+#testimonialContainer > div > h3 > span {
+  margin-left: 15px;
+  font-weight: 700;
 }
 
-#testimonialContainer>div>p {
-    font-size: 30px;
-    margin: 0;
+#testimonialContainer > div > p {
+  font-size: 3vmax;
+  margin: 0;
 }
 
 #testimonials {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-#testimonials>fieldset {
-    width: 300px;
-    height: 250px;
-    border-radius: 25px;
-    cursor: pointer;
-    color: white;
-    text-align: left;
+#testimonials > fieldset {
+  width: 320px;
+  max-width: 80%;
+  height: 260px;
+  padding: 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  color: white;
+  text-align: left;
+  margin-bottom: 50px;
 }
 
-#testimonials>fieldset:hover {
-    transform: scale(1.1);
-    color: #3963ab;
-    border-color: #3963ab;
+#testimonials > fieldset:hover {
+  transform: scale(1.1);
+  color: #3963ab;
+  border-color: #3963ab;
 }
 
-#testimonials>fieldset>legend {
-    padding: 0 10px;
+#testimonials > fieldset > legend {
+  padding: 0 10px;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+#testimonials > fieldset > p {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 425px) {
+  #bg1Container {
+    background-position: bottom;
+  }
+
+  #bg1Container > div {
+    margin: 0 30px;
+    padding: 20px 0px;
+  }
+
+  #bg1Container > div > p {
+    font-size: 12px;
+    margin: 0;
+    width: 100%;
+  }
+
+  #aboutContainer {
+    height: auto;
+    margin: 0 0 80px;
+    background-image: none;
+  }
+
+  #aboutContainer > div {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  #aboutContainer > div > h1 {
+    font-size: 34px;
+    margin: 0 0 15px;
+  }
+
+  #aboutContainer > div > h1 > span {
+    margin: 10px;
+    font-weight: 600;
+  }
+
+  #aboutContainer > div > p {
+    font-size: 12px;
+    width: 80%;
+  }
+
+  #testimonialContainer {
+    margin: 0;
+  }
+
+  #testimonialContainer > div {
+    padding-top: 0px;
+  }
+
+  #testimonialContainer > div > h3 {
+    font-size: 24px;
+    margin: 0;
+    letter-spacing: normal;
+  }
+
+  #testimonialContainer > div > h3 > span {
+    margin-left: 5px;
+    font-weight: 600;
+  }
+
+  #testimonialContainer > div > p {
     font-size: 20px;
-    font-weight: 800;
-}
+    margin: 0;
+  }
 
-#testimonials>fieldset>p {
-    font-size: 18px;
+  #testimonials > fieldset {
+    height: 150px;
+    margin: 20px 0 0;
+    padding: 5px;
+    text-align: center;
+  }
+
+  #testimonials > fieldset > legend {
+    padding: 0 10px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  #testimonials > fieldset > p {
+    font-size: 12px;
+    padding: 5px 10px 0;
+  }
 }
