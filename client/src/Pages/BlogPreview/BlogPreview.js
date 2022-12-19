@@ -12,24 +12,35 @@ function BlogPreview() {
         axios.get(`/blog/${blogId}`).then(res => setBlogObj(res.data)).catch(err => alert("Error Found."))
     }, [blogId]);
 
-    return (<>
-        <div id={
-            style.previewContainer
-        }>
-            <div>
-                <img src={
-                        blogObj.image
+    return (
+        <>
+            <button id={
+                    style.blogsLink
+                }
+                onClick={
+                    () => {
+                        window.history.back();
+                        window.scrollTo({top: 0, behavior: 'smooth'})
                     }
-                    alt="blogImg"/>
-                <h1> {
-                    blogObj.title
-                }</h1>
-                <p> {
-                    blogObj.content
-                }</p>
+            }>Back</button>
+            <div id={
+                style.previewContainer
+            }>
+                <div>
+                    <img src={
+                            blogObj.image
+                        }
+                        alt="blogImg"/>
+                    <h1> {
+                        blogObj.title
+                    }</h1>
+                    <p> {
+                        blogObj.content
+                    }</p>
+                </div>
             </div>
-        </div>
-    </>)
+        </>
+    )
 }
 
 export default BlogPreview;

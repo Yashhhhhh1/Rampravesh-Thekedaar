@@ -17,7 +17,7 @@
     width: 140px;
 }
 
-#navBar{
+#navBar {
     display: flex;
 }
 
@@ -35,7 +35,7 @@
     color: #000;
 }
 
-#hamburgerIcon{
+#hamburgerIcon {
     display: none;
     z-index: 5;
     color: white;
@@ -45,32 +45,31 @@
 }
 
 
-@media screen and (max-width: 425px){
-    #header{
+@media screen and (max-width: 425px) {
+    #header {
         width: 100%;
         padding: 5px 0px;
     }
 
-    #navBar > nav{
+    #navBar>nav {
         background-color: rgba(255, 255, 255, 1);
         position: absolute;
-        height: 250px;
-        width: 140px;
         top: 80px;
         right: 30px;
-        display: none;
-    }   
+        border-radius: 2px;
+    }
 
-    #navBar > nav >a{
+    #navBar>nav>a {
         display: block;
         color: black;
         font-weight: 700;
-        margin: 30px 10px 0;
+        margin: 5px 5px 0;
+        padding: 10px 5px;
     }
 
-    #hamburgerIcon{
+    #hamburgerIcon {
         display: block;
     }
 
-    
+
 }
